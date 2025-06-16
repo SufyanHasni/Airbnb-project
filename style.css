@@ -1,7 +1,26 @@
 .header {
     border-bottom: 1px solid black;
-    background-color: rgb(221, 216, 216);
+    display: flex;
+    justify-content: space-between;
+   justify-content: baseline;
+    background-color: aliceblue;
+    margin: 5px;
+    /* background-color: rgb(221, 25, 25); */
 }
-.logo>h2 {
+.logo img{
     color: rgb(192, 32, 32);
+    height: 40px;
+    width: 110px;
+}
+.link{
+    font-size: 20px;
+    
+}
+.icon{
+    display: flex;
+    gap: 10px;
+    text-size-adjust: 20px;
+}
+.world{
+    font-size: 30px;
 }
