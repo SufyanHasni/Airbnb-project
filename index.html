@@ -1,35 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AirBnB-Clone</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <nav>
-        <div id="nav1">
-            <img src="assets/airbnb.svg" width="100px" alt="">
-            <h2>🏡 Homes</h2>
+    <div class="inp-father">
+        <input type="text" placeholder=" Start Your Search" id="input">
+    </div>
+  <header>
+    <div class="small-logo">
+        <img src="assests/airbnb.png.png"  width="65px" alt="">
+    </div>
+      <div class="logo">
+        <img
+          
+          width="130px"
+          src="https://logos-world.net/wp-content/uploads/2020/10/Airbnb-Logo-2014.png"
+          alt=""
+        />
+      </div>
+      <div class="container">
+        <div class="home">
+          <img
+            
+            width="80px"
+            src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-search-bar-icons/original/4aae4ed7-5939-4e76-b100-e69440ebeae4.png?im_w=240"
+            alt=""
+          />
+          <p class="nav">Homes</p>
         </div>
-        <div id="nav2">
-            <h2 id="exp">🛎 Experiences <p id="expire">🌟 Services </p>
-            </h2>
-            <h2>Become a host</h2>
+        <div class="home">
+          <img
+            
+            width="80px"
+            src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-search-bar-icons/original/e47ab655-027b-4679-b2e6-df1c99a5c33d.png?im_w=240"
+            alt=""
+          />
+          <p class="nav">Experience</p>
         </div>
-        <div id="nav3">
-            <div id="nav4">
-                <img src="assets/burger-menu-svgrepo-com.svg" width="20px" alt="">
-                <h1>&#127760;</h1>
-            </div>
+        <div class="home">
+          <img
+        
+            width="80px"
+            src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-search-bar-icons/original/3d67e9a9-520a-49ee-b439-7b3a75ea814d.png?im_w=240"
+            alt=""
+          />
+          <p class="nav">Services</p>
         </div>
-    </nav>
+      </div>
+      <div class="btns">
+        <p id="host">Become a host</p>
+        <img class="img1"
+          src="https://www.svgrepo.com/show/80307/world.svg"
+          height="60"
+          width="20"
+          alt=""
+        />
+        <img class="img1" src="assets/burger-menu-svgrepo-com.svg" height="80" width="25" alt="">
+        </p>
+      </div>
+    </header>
     <div id="searchbar">
         <div class="srch">
             <h6>Where <br> Search destination</h6>
-        </div>
+        </div>  
         <div class="srch">
             <h6>Check in <br> Add dates</h6>
         </div>
@@ -38,162 +75,127 @@
         </div>
         <div class="srch">
             <h6>Who <br> Add guests</h6>
-        </div>
-        <div class="srch"><img src="assets/8666693_search_icon.svg" width="30px" alt=""></div>
+        </div class="srch">
+        <div><img src="/assests/8666693_search_icon.svg" width="30px" alt=""></div>
     </div>
     <main>
         <div class="cards">
             <div>
-                <img class="cardimg"
-                    src="data:image/jpeg;base64,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"
-                    alt="">
+                <img  class="cardimg" src="https://www.marthastewart.com/thmb/9Fkuck9OK7P9-vJ1RO2Eo_TGLlw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/guest-bedroom-ideas-1-1114-ca3c1e61b40241f28d872251b632d071.jpeg" alt="" >
                 <div class="title">
                     <h3>Rome,Italy</h3>
-                    <h3><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/37/star-512.png" width="20px"
-                            alt="">4.92</h3>
+                    <h3><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/37/star-512.png" width="20px" alt="">4.92</h3>
                 </div>
                 <div class="info">
                     <h4>Stay with Oliver</h4>
                     <h4>Nov 18-25</h4>
-                    <h3>$81 Day</h3>
-                </div>
+                    <h3>$55 Per-Day</h3>
+                </div>   
             </div>
         </div>
         <div class="cards">
             <div>
-                <img class="cardimg"
-                    src="https://hips.hearstapps.com/hmg-prod/images/guest-bedroom-1-1576617523.jpg"
-                    alt="">
+                <img class="cardimg" src="https://thebrainandthebrawn.com/wp-content/uploads/2024/01/Small-Guest-Bedroom-Ideas-Plank-Ceiling-Twins.jpg" alt="">
                 <div class="title">
-                    <h3>Quetta,pakistan</h3>
-                    <h3><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/37/star-512.png" width="20px"
-                            alt="">4.92</h3>
+                    <h3>karachi,pakistan</h3>
+                    <h3><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/37/star-512.png" width="20px" alt="">4.92</h3>
                 </div>
                 <div class="info">
                     <h4>Stay with yourself</h4>
                     <h4>jan 12-25</h4>
-                    <h3>$52 Day</h3>
-                </div>
-            </div>
+                    <h3>$25 Per-Day</h3>
+                </div>               </div>
         </div>
         <div class="cards">
             <div>
-                <img class="cardimg"
-                    src="data:image/jpeg;base64,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"
-                    alt="">
+                <img class="cardimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkPNHRcSfu1je9IJKRyEghEBz3V8R9byjgmAOt91FF1mgRfYEIrT_XT-RHOSXywuNPols&usqp=CAU" alt="">
                 <div class="title">
-                    <h3>London,England</h3>
-                    <h3><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/37/star-512.png" width="20px"
-                            alt="">3.92</h3>
+                    <h3>Nothingham,England</h3>
+                    <h3><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/37/star-512.png" width="20px" alt="">3.92</h3>
                 </div>
                 <div class="info">
                     <h4>Stay with </h4>
                     <h4>feb 15-25</h4>
-                    <h3>$61 Day</h3>
-                </div>
-            </div>
+                    <h3>$60 Per-Day</h3>
+                </div>               </div>
         </div>
         <div class="cards">
             <div>
-                <img class="cardimg"
-                    src="https://hips.hearstapps.com/hmg-prod/images/the-boarding-house-tack-room-1614808120.jpg"
-                    alt="">
+                <img class="cardimg" src="https://havenly.com/blog/wp-content/uploads/2021/05/99b42126-7f24-45ea-9c11-64f7a151069c-1710x970.jpg" alt="">
                 <div class="title">
-                    <h3>Paris,France</h3>
-                    <h3><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/37/star-512.png" width="20px"
-                            alt="">3.92</h3>
+                    <h3>Berlin,Germany</h3>
+                    <h3><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/37/star-512.png" width="20px" alt="">3.92</h3>
                 </div>
                 <div class="info">
                     <h4>Stay with </h4>
                     <h4>feb 15-25</h4>
-                    <h3>$89 Day</h3>
-                </div>
-            </div>
+                    <h3>$75 Per-Day</h3>
+                </div>               </div>
         </div>
         <div class="cards">
             <div>
-                <img class="cardimg"
-                    src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/49510043.jpg?k=6dba18f3b5f3fa21cb9de22aff04cb5b31fb46a1d22c6ad2ec64f53ab2038759&o=&hp=1"
-                    alt="">
+                <img class="cardimg" src="https://hips.hearstapps.com/hmg-prod/images/clx060125wellmazzarini-009-2-682f580063490.jpg?crop=0.976xw:0.815xh;0,0.185xh&resize=980:*" alt="">
                 <div class="title">
                     <h3>Tehran,Iran</h3>
-                    <h3><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/37/star-512.png" width="20px"
-                            alt="">4.92</h3>
+                    <h3><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/37/star-512.png" width="20px" alt="">4.92</h3>
                 </div>
                 <div class="info">
                     <h4>Stay with </h4>
                     <h4>mar 16-25</h4>
-                    <h3>$45 Day</h3>
-                </div>
-            </div>
+                    <h3>$35 Per-Day</h3>
+                </div>               </div>
         </div>
         <div class="cards">
             <div>
-                <img class="cardimg"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6svnC42O1p2h0YlHx_nb8TtllsHPpENZGuA&s"
-                    alt="">
+                <img class="cardimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCoNY6c0WeyvUGPvmmQE5I0-KHZ0wZ1JUoWQ&s" alt="">
                 <div class="title">
-                    <h3>Istanbul,Turkey</h3>
-                    <h3><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/37/star-512.png" width="20px"
-                            alt="">3.62</h3>
+                    <h3>Baku,Azerbaijan</h3>
+                    <h3><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/37/star-512.png" width="20px" alt="">3.62</h3>
                 </div>
                 <div class="info">
                     <h4>Stay with </h4>
                     <h4>oct 15-25</h4>
-                    <h3>$37 Day</h3>
-                </div>
-            </div>
+                    <h3>$55 Per-Day</h3>
+                </div>               </div>
         </div>
         <div class="cards">
             <div>
-                <img class="cardimg"
-                    src="https://q-xx.bstatic.com/xdata/images/hotel/max500/173547249.jpg?k=844b8f436a6e19426c71d4e3aa24a24b64274f6ed8a3ba70425376c30009f5da&o="
-                    alt="">
+                <img class="cardimg" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/677452362.jpg?k=6fea135269e4c0bf7f359789f692d730447778a46395f1f72535eee448a95bb5&o=&hp=1" alt="">
                 <div class="title">
-                    <h3>Manama,Bahrain</h3>
-                    <h3><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/37/star-512.png" width="20px"
-                            alt="">3.92</h3>
+                    <h3>Rasal khayma,Bahrain</h3>
+                    <h3><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/37/star-512.png" width="20px" alt="">3.92</h3>
                 </div>
                 <div class="info">
                     <h4>Stay with </h4>
                     <h4>Dec 15-25</h4>
-                    <h3>$92 Day</h3>
-                </div>
-            </div>
+                    <h3>$19 Per-Day</h3>
+                </div>               </div>
         </div>
         <div class="cards">
             <div>
-                <img class="cardimg"
-                    src="https://havenly.com/blog/wp-content/uploads/2021/05/99b42126-7f24-45ea-9c11-64f7a151069c-1710x970.jpg"
-                    alt="">
+                <img class="cardimg" src="https://images.pexels.com/photos/1669799/pexels-photo-1669799.jpeg?cs=srgb&dl=pexels-fotoaibe-1669799.jpg&fm=jpg" alt="">
                 <div class="title">
                     <h3>musqat,Oman</h3>
-                    <h3><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/37/star-512.png" width="20px"
-                            alt="">3.92</h3>
+                    <h3><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/37/star-512.png" width="20px" alt="">3.92</h3>
                 </div>
                 <div class="info">
                     <h4>Stay with </h4>
                     <h4>jan 25-26</h4>
-                    <h3>$82 Day</h3>
-                </div>
-            </div>
+                    <h3>$35 Per-Day</h3>
+                </div>               </div>
         </div>
         <div class="cards">
             <div>
-                <img class="cardimg"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzdn77Ett-E5GIU4dRxmO5QsBy7BMJYHRqZA&s"
-                    alt="">
+                <img class="cardimg" src="https://joycustom.com/wp-content/uploads/2021/02/Arlene-Critzos-1.jpg" alt="">
                 <div class="title">
-                    <h3>karachi,pakistan</h3>
-                    <h3><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/37/star-512.png" width="20px"
-                            alt="">4.92</h3>
+                    <h3>Moscow,Russia</h3>
+                    <h3><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/37/star-512.png" width="20px" alt="">4.92</h3>
                 </div>
                 <div class="info">
                     <h4>Stay with </h4>
                     <h4>apr 28-25</h4>
-                    <h3>$95 Day</h3>
-                </div>
-            </div>
+                    <h3>$20 Per-Day</h3>
+                </div>               </div>
         </div>
     </main>
     <footer id="mainfooter">
@@ -201,7 +203,7 @@
             <div id="support">
                 <h4>Support</h4>
                 <h4 class="footerinfo">Help Center <br> Safety Info <br> Cancellation Options</h4>
-
+                
             </div>
             <div id="hosting">
                 <h4>Hosting</h4>
@@ -209,11 +211,10 @@
             </div>
             <div id="about">
                 <h4>About</h4>
-                <h4 class="footerinfo">Newsroom <br>Careers <br> Investors</h4>
+                <h4 class="footerinfo">SocialMedia <br>Careers <br> Investors</h4>
             </div>
         </div>
         <p id="restruction">© 2025 <span id="red">AirBnB-Clone </span></p>
     </footer>
 </body>
-
 </html>
